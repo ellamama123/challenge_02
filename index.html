@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Team Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html{
+  background-color: #FAFAFA;
+  font-family: Poppins;
+  font-size: 10px;
+  margin:0;
+  padding:0;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+header{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header h1{
+  font-family: PT Serif;
+  font-size: 3.6rem;
+  width:40%;
+  display: flex;
+  justify-content: center;
+  margin:60px;
+}
+
+
+.intro{
+  width:35%;
+  padding:50px;
+ 
+}
+
+
+.intro h2{
+  font-size: 1.8rem;
+}
+.intro p{
+  font-size: 1.8rem;
+}
+
+/* images */
+
+main{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  padding: 72px 150px;
+  grid-column-gap: 20px;
+  margin-bottom: 50px;
+}
+
+.profile{
+  width:275px;
+  position: relative;
+}
+
+.profile img{
+  width:238px;
+}
+
+.profile:nth-child(3n+2){
+  margin-top: 100px;
+}
+
+.job{
+  position: absolute;
+  right: 0px;
+  top:0;
+  font-family: 'PT Serif', serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+}
+
+.profile h3{
+  font-size: 1.8rem;
+  margin:10px 0;
+}
+
+
+
+footer{
+  text-align: center;
+}
+
+footer p{
+  font-size: 14px;
+  color:#333;
+  opacity: 0.7;
+}
+
+footer a{
+  text-decoration: none;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #F12711, #F5AF19);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+@media only screen and (max-width:856px){
+  header{
+    flex-direction: column;
+  }
+
+  header h1{
+    width:100%;
+    display: flex;
+    justify-content: flex-start;
+    margin:0;
+    margin:10px 60px;
+  }
+  
+  .intro{
+    width:60%;
+    padding:10px 60px;
+  }
+
+  main{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .profile:nth-child(3n+2){
+    margin-top: 0;
+  }
+
+  .profile:nth-child(even){
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width:582px){
+  header h1{
+    margin:10px;
+  }
+
+  .intro{
+    width:80%;
+    padding:10px 10px;
+
+  }
+
+  .profile{
+    width:140px;
+    position: relative;
+  }
+
+  .profile img{
+    width:110px;
+  }
+
+  main{
+    margin-bottom: 25px;
+  }
+
+}
+</style>
+<body>
+  <header>
+    <h1>The creative crew</h1>
+    <div class="intro">
+      <h2 class="uppercase">Who we are</h2>
+      <p>We are team of creatively diverse. driven. innovative individuals working in various locations from the world.</p>
+    </div>
+  </header>
+  <main>
+    <div class="profile">
+      <img src="photo1.png">
+      <p class="uppercase job">Product owner</p>
+      <h3>Bill Mahoney</h3>   
+    </div>
+
+    <div class="profile downward">
+      <img src="photo2.png">
+      <p class="uppercase job">Art Director</p>
+      <h3>Saba Cabrera</h3>   
+    </div>
+
+    <div class="profile">
+      <img src="photo3.png">
+      <p class="uppercase job">Tech Lead</p>
+      <h3>Shae Le</h3>   
+    </div>
+
+    <div class="profile">
+      <img src="photo4.png">
+      <p class="uppercase job">UX designer</p>
+      <h3>Skylah Lu</h3>   
+    </div>
+
+    <div class="profile downward">
+      <img src="photo5.png">
+      <p class="uppercase job">Developer</p>
+      <h3>Griff Richards</h3>   
+    </div>
+
+    <div class="profile">
+      <img src="photo6.png">
+      <p class="uppercase job">Developer</p>
+      <h3>Stan John</h3>   
+    </div>
+  </main>
+
+  <footer>
+    <p>Nguyen Dinh Chien @ DevChallenges.io</p>
+  </footer>
+
+  
+</body>
+</html>

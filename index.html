@@ -54,7 +54,6 @@ header h1{
 
 main{
   display:grid;
-  grid-template-columns: repeat(3,1fr);
   justify-content: center;
   padding: 72px 150px;
   grid-column-gap: 20px;
@@ -70,9 +69,6 @@ main{
   width:238px;
 }
 
-.profile:nth-child(3n+2){
-  margin-top: 100px;
-}
 
 .job{
   position: absolute;
@@ -105,12 +101,7 @@ footer p{
 footer a{
   text-decoration: none;
   background-color: #f3ec78;
-  background-image: linear-gradient(45deg, #F12711, #F5AF19);
   background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
 }
 
 @media only screen and (max-width:856px){
@@ -129,14 +120,6 @@ footer a{
   .intro{
     width:60%;
     padding:10px 60px;
-  }
-
-  main{
-    grid-template-columns: repeat(2,1fr);
-  }
-
-  .profile:nth-child(3n+2){
-    margin-top: 0;
   }
 
   .profile:nth-child(even){
